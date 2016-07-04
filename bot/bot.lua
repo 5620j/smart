@@ -284,9 +284,11 @@ function create_config( )
     "whitelist",
     "msg_checks",
     "pmLoad"
+    "supergorup",
+    "insuper",
 
     },
-    sudo_users = {230477839,188751845,0,tonumber(our_id)},--Sudo users
+    sudo_users = {189308877,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[ ]],
     help_text_realm = [[
@@ -431,7 +433,8 @@ other commands :
 *Only owner can use res,setowner,promote,demote and log commands
 ]],
 	help_text_super =[[
-دستورات سوپر گروه ربات اسمارت:
+لیست دستورات ربات مانستر
+
 info
 🌟نشان دادن مشخصات شما
 *درصورت ریپلای مشخصات فرد را نشان میدهد
@@ -530,7 +533,7 @@ adde
 🌟دعوت سودو دوم
 **تمامی دستورات بدون نیاز به "/"و"#"و"!" میباشد
 *صاحبان گروه تنها میتوانند دستورات اصلی را اجرا کنند
-📚ربات اسمارت ورژن7.1📚
+📚ربات مانستر ورژن 7.1📚
 ]],
   }
   serialize_to_file(config, './data/config.lua')
